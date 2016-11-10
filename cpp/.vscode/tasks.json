@@ -1,0 +1,24 @@
+{
+    "version": "0.1.0",
+    "command": "mingw32-make",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "tasks": [
+    {
+        "taskName": "all",
+        "args": ["all"],
+        "problemMatcher": "$tsc",
+        "isBuildCommand": true
+    },
+    {
+        "taskName": "clean",
+        "args": ["clean"],
+        "problemMatcher": "$tsc"
+    },
+    {
+        "taskName": "cleanall",
+        "args": ["clean", "all"],
+        "problemMatcher": "$tsc"
+    }
+    ]
+}
