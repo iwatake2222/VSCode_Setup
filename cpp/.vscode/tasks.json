@@ -1,24 +1,33 @@
 {
-    "version": "0.1.0",
-    "command": "mingw32-make",
-    "isShellCommand": true,
-    "showOutput": "always",
-    "tasks": [
-    {
-        "taskName": "all",
-        "args": ["all"],
-        "problemMatcher": "$tsc",
-        "isBuildCommand": true
-    },
-    {
-        "taskName": "clean",
-        "args": ["clean"],
-        "problemMatcher": "$tsc"
-    },
-    {
-        "taskName": "cleanall",
-        "args": ["clean", "all"],
-        "problemMatcher": "$tsc"
-    }
-    ]
+	"version": "2.0.0",
+
+	"tasks": [
+		{
+			"label": "all",
+			"command": "mingw32-make.exe",
+			"args": ["all"],
+			"type": "shell",
+			"problemMatcher": "$tsc",
+			"group": "build",
+			"presentation": {
+				"panel": "shared"
+			}
+		},
+		{
+			"label": "clean",
+			"command": "mingw32-make.exe",
+			"args": ["clean"],
+			"type": "shell",
+			"problemMatcher": "$tsc",
+			"group": "build"
+		},
+		{
+			"label": "clean all",
+			"command": "mingw32-make.exe",
+			"args": ["clean", "all"],
+			"type": "shell",
+			"problemMatcher": "$tsc",
+			"group": "build"
+		}
+	]
 }

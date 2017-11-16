@@ -8,7 +8,8 @@ BINARY=DEBUG
 ifeq ($(PLATFORM),WIN_MINGW)
 # for win
 MAKE = mingw32-make
-DEL = del
+#DEL = del
+DEL = rm -f
 CC = g++
 AR = ar
 else
@@ -35,4 +36,3 @@ OBJS = $(SRCS:.cpp=.o)
 	$(CC) $(CFLAGS) $(INCLUDES) -c $<
 .cpp.o:
 	$(CC) $(CFLAGS) $(INCLUDES) -c $<
-

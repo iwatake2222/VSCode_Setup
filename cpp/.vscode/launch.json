@@ -20,7 +20,7 @@
             "windows": {
                 "MIMode": "gdb"
             },
-            "miDebuggerPath": "c:/mingw/bin/gdb.exe"
+            "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe"
         },
         {
             "name": "C++ Attach",
